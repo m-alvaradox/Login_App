@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: brown;
+    background-attachment: fixed;
+}
+
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 5px 15px;
+    border-radius: 10px;
+    max-width: 90%;
+    text-align: center;
+    animation: bounceAnimation 3s infinite;
+}
+
+@keyframes bounceAnimation {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(10px); }
+    60% { transform: translateY(5px); }
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+button {
+    margin-top: 20px;
+    max-width: 320px;
+    display: flex;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    gap: 0.75rem;
+    color: rgb(65, 63, 63);
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+
+.button svg {
+    height: 24px;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+#user-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#user-details img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #ddd;
+    margin-top: 10px;
+}
+
+#user-name {
+    font-size: 1.25rem;
+    margin: 10px 0;
+}
+
+.logo {
+    width: 180px;
+    height: auto;
+    margin-bottom: 20px;
+    max-width: 80vw;
+  }
+
+.footer {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 1rem;
+    color: white;
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 140px;
+        margin-bottom: 15px;
+    }
+}
